@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    margin: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar-container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
+
+}
+
+
+header.navbar-container .navbar-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .navbar-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .navbar-list li a{
+    text-decoration: none0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .3s ease-in-out;
+}
+
+header.navbar-container .navbar-list li:hover a{
+    background-color: #196135;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+  
+}
+
+main .content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+main .content .card{
+    flex: 1 1;
+}
+
+main .content .card .title{
+    font-size:  3.5rem;
+    margin-block: 1rem;
+}
+
+main .content .card p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .content .card button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+     font-family: 'Rubik', sans-serif;
+    color: white;
+ 
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #196135;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .content .card button:hover {
+    border: 3px solid #196135;
+    color: #196135;
+    background-color: transparent;
+}
+
+main .content .image {
+    flex: 1;
+    display: flex;
+}
+
+main .content .image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+  }
+   
+  main aside .biodata {
+    height: 100%;
+    display: flex;
+  }
+   
+  main aside .biodata ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #196135;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+   
+  main aside .biodata li {
+    list-style-type: none;
+    color: white;
+  }
+   
+  main aside .biodata li a:hover {
+    color: #196135;
+  }
+
+  main aside .biodata
+
+.edu {
+    padding: 40px 20px;
+    font-size: 20px;
+    margin: left;
+    display: flex;
+}
+
+.eduii {
+    font-size:  3.5rem;
+    margin-block: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.edu table tr td {
+    text-align: center;
+    padding: 50px;
+}
+
+.edu table tr td p {
+    margin: 0;
+}
+
+.edu-content {
+    display: flex;
+    grid-template-columns: 60% auto;
+    margin-top: 20px;
+}
+
+.edu-content .image img,
+.skill-content .image img {
+  height: 300px;
+  margin: 0;
+}
+
+.skils2 {
+    font-size:  3.5rem;
+    margin-block: 1rem;
+    text-align: center;
+}
+
+.skill-content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: white;
+    padding: 40px 20px;
+    color: #202429;
+    font-size: 20px;
+}
+
+.skill h2,
+.skill table tr td {
+    color: #202429;
+}
+
+.skill-content table {
+    width: 80%;
+}
+
+.bar {
+    margin: 10px 0 0 0;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #393e46;
+    align-items: center;
+}
+
+.skill-bar {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #6d9886;
+}
+
+.skill-bar.web {
+    width: 20%;
+}
+
+  .skill-bar.network {
+    width: 30%;
+}
+
+  .skill-bar.design {
+    width: 40%;
+}
+
+footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #196135;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+      flex-direction: column;
+    }
+   
+    header.navbar-container .navbar-list ul {
+      flex-wrap: wrap;
+      column-gap: .5rem;
+    }
+   
+    main {
+      padding: 1rem 3rem;
+    }
+   
+    main .content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    main .content .card {
+        flex-direction: column;
+        gap: 2rem;
+      }
+   
+    main .content .card .title {
+      font-size: 3rem;
+    }
+   
+    main .content .card p {
+      font-size: 1rem;
+    }
+   
+    main .content .content-image {
+      order: -1;
+    }
+  }
